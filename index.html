@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Al-Arsh Academy | Women's Islamic Education</title>
+    <meta content="An exclusive Islamic education platform for women and children." name="description" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#2D5A43",
+                        secondary: "#D4AF37",
+                        "background-light": "#FDFCF7",
+                        "background-dark": "#0F172A",
+                    },
+                    fontFamily: {
+                        display: ["Amiri", "serif"],
+                        sans: ["Outfit", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "12px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        .gradient-mesh {
+            background-color: #2D5A43;
+            background-image: radial-gradient(at 0% 0%, hsla(145,56%,20%,1) 0, transparent 50%), 
+                              radial-gradient(at 50% 0%, hsla(145,45%,25%,1) 0, transparent 50%), 
+                              radial-gradient(at 100% 0%, hsla(145,56%,20%,1) 0, transparent 50%);
+        }
+        .card-pattern {
+            background-image: radial-gradient(#2D5A43 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.05;
+        }
+        .arabic-text {
+            font-family: 'Amiri', serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .carousel-container {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-sans transition-colors duration-300">
+    <nav
+        class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
+                        <span class="material-icons-round">mosque</span>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold text-primary dark:text-white block leading-none">Al-Arsh
+                            Academy</span>
+                        <span class="text-[10px] uppercase tracking-widest text-secondary font-semibold">Light of
+                            Knowledge</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a class="hover:text-primary transition-colors" href="#">Home</a>
+                    <a class="hover:text-primary transition-colors" href="#courses">Courses</a>
+                    <a class="hover:text-primary transition-colors" href="#tutoring">Academic Tutoring</a>
+                    <a class="hover:text-primary transition-colors" href="#instructors">Instructors</a>
+                    <a class="hover:text-primary transition-colors" href="#workshops">Workshops</a>
+                    <a class="hover:text-primary transition-colors" href="#community">Community</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <!-- <div
+                        class="flex items-center gap-1 px-3 py-1.5 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-medium cursor-pointer">
+                        <span class="material-icons-round text-sm">language</span>
+                        <span>English</span>
+                        <span class="material-icons-round text-sm">expand_more</span>
+                    </div> -->
+                    <button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full"
+                        onclick="document.documentElement.classList.toggle('dark')">
+                        <span class="material-icons-round dark:hidden">dark_mode</span>
+                        <span class="material-icons-round hidden dark:block">light_mode</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="relative gradient-mesh text-white pt-24 pb-40 overflow-hidden">
+        <div class="absolute inset-0 card-pattern opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div
+                class="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-1.5 rounded-full border border-white/20 mb-8">
+                <span class="w-2 h-2 bg-yellow-400 rounded-full"></span>
+                <span class="text-xs font-semibold tracking-wide uppercase">Exclusive Women's Academy</span>
+            </div>
+            <h2 class="arabic-text text-4xl md:text-5xl lg:text-6xl mb-6 text-secondary">بِسْمِ اللهِ الرَّحْمٰنِ
+                الرَّحِيْمِ</h2>
+            <h1 class="text-4xl md:text-6xl font-display font-bold mb-6">Al-Arsh Academy</h1>
+            <p class="text-secondary italic font-display text-xl mb-8">Guided by Faith, Empowered by Knowledge</p>
+            <p class="max-w-2xl mx-auto text-lg text-slate-200 mb-12">
+               Empowering generation through education, skills, and self-belief.
+                Building confident minds for a brighter future.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a class="bg-secondary hover:bg-yellow-600 text-primary font-bold px-8 py-4 rounded-full transition-all flex items-center justify-center gap-2"
+                    href="#courses">
+                    Explore Curriculum
+                    <span class="material-icons-round">arrow_forward</span>
+                </a>
+                <a class="bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white font-bold px-8 py-4 rounded-full transition-all flex items-center justify-center gap-2"
+                    href="#community">
+                    Join Community
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-24 bg-background-light dark:bg-background-dark"
+            style="clip-path: polygon(0 100%, 100% 100%, 100% 0, 50% 100%, 0 0);"></div>
+    </section>
+
+
+    <section class="py-12 overflow-hidden" id="courses">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div
+                    class="inline-flex items-center gap-2 text-secondary font-bold uppercase tracking-widest text-xs mb-4">
+                    <span class="material-icons-round text-sm">auto_awesome</span>
+                    Full Experience
+                </div>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-primary dark:text-white mb-4">Our
+                    Comprehensive Curriculum</h2>
+                <p class="text-slate-500 dark:text-slate-400">Discover wide-ranging courses designed for every interest
+                    and educational need.</p>
+            </div>
+
+            <div class="mb-20 group relative">
+                <div class="flex justify-between items-end mb-8">
+                    <div>
+                        <h3 class="text-2xl font-display font-bold text-primary dark:text-white">Islamic Knowledge</h3>
+                        <p class="text-sm text-slate-500">Deen-focused learning for a balanced life</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button
+                            class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                            onclick="document.getElementById('islamic-carousel').scrollBy({left: -400, behavior: 'smooth'})">
+                            <span class="material-icons-round">chevron_left</span>
+                        </button>
+                        <button
+                            class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                            onclick="document.getElementById('islamic-carousel').scrollBy({left: 400, behavior: 'smooth'})">
+                            <span class="material-icons-round">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-4" id="islamic-carousel">
+                    <script>
+                        const islamic = [
+                            { name: "Tajweed", status: "Free", icon: "menu_book", desc: "Master the rules of Quranic pronunciation." },
+                            { name: "Nazra-e-Qur’an", status: "Paid", icon: "auto_stories", desc: "Fluent Quran reading with continuous guidance." },
+                            { name: "Namaz with Tajweed", status: "Free", icon: "mosque", desc: "Perfecting your daily prayers and recitation." },
+                            { name: "Seerah Course", status: "Free", icon: "history_edu", desc: "The life and teachings of Prophet Muhammad (PBUH)." },
+                            { name: "40 Rabbana Duas", status: "Free", icon: "favorite", desc: "Memorizing powerful prayers from the Quran." },
+                            { name: "Qur’anic Arabic", status: "Paid", icon: "translate", desc: "Understand the language of the Divine Revelation." },
+                            { name: "40 Durood-e-Paak", status: "Free", icon: "auto_awesome", desc: "Salutations upon the Prophet (PBUH)." },
+                            { name: "Daily Tilawat", status: "Free", icon: "volume_up", desc: "Daily group sessions for Quran recitation." },
+                            { name: "40 Ahadees", status: "Free", icon: "forum", desc: "Fundamental Prophetic traditions for daily life." }
+                        ];
+                        document.write(islamic.map(item => `
+                        <div class="min-w-[280px] snap-start bg-white dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 p-8 shadow-sm hover:shadow-xl transition-all relative group">
+                            <div class="absolute top-4 right-4">
+                                <span class="${item.status === 'Free' ? 'bg-emerald-100 text-emerald-700' : 'bg-secondary text-primary'} font-bold text-[9px] px-3 py-1 rounded-full uppercase tracking-widest">${item.status}</span>
+                            </div>
+                            <div class="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-6">
+                                <span class="material-icons-round text-3xl">${item.icon}</span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-3">${item.name}</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mb-8 line-clamp-2">${item.desc}</p>
+                            <a href="#" class="inline-flex items-center gap-2 text-primary dark:text-secondary font-bold text-xs uppercase group-hover:gap-3 transition-all">
+                                LEARN MORE <span class="material-icons-round text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    `).join(''));
+                    </script>
+                </div>
+            </div>
+            <div class="mb-20 group relative">
+                <div class="flex justify-between items-end mb-8">
+                    <div>
+                        <h3 class="text-2xl font-display font-bold text-primary dark:text-white">Skill-Based
+                            Masterclasses</h3>
+                        <p class="text-sm text-slate-500">Professional skills for creativity and empowerment</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button
+                            class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                            onclick="document.getElementById('skill-carousel').scrollBy({left: -400, behavior: 'smooth'})">
+                            <span class="material-icons-round">chevron_left</span>
+                        </button>
+                        <button
+                            class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                            onclick="document.getElementById('skill-carousel').scrollBy({left: 400, behavior: 'smooth'})">
+                            <span class="material-icons-round">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-4" id="skill-carousel">
+                    <script>
+                        const skills = [
+                            { name: "Mehndi Art", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuALbdF022gbNmw9Qkg2Gd8lt8QojnSq5lBUvh5-mf0gKERX3RWxDdTiwggg-Z40ViJ2q1imRIMdawDswFn6-eCKz1RQp5xA8RAKPI0Ei-fPYmlbWGS_OJXzEpo-2rNs0PvjolxKpBSIHnRUo9j40ZLm6d4mLjUR1Qx0GiU6XusjuAIndK75xBtqJN21B1X9oxbUecukjiY7ArOppmIMxik36iThuD9XXjgtUqoOQukFAuuGQcmHM4lvsbis4QxinuGXrsyCwKaWdDDU", desc: "Traditional henna patterns and intricate bridal designs." },
+                            { name: "Make-up Artist", img: "https://images.pexels.com/photos/6954845/pexels-photo-6954845.jpeg", desc: "Professional make-up techniques for all occasions." },
+                            { name: "Drawing & Sketching", img: "https://images.pexels.com/photos/7283494/pexels-photo-7283494.jpeg", desc: "Master the fundamentals of artistic expression." },
+                            { name: "Cooking Masterclass", img: "https://images.pexels.com/photos/5907596/pexels-photo-5907596.jpeg", desc: "Gourmet recipes and culinary secrets from experts." },
+                            { name: "Baking & Pastry", img: "https://images.pexels.com/photos/34470280/pexels-photo-34470280.jpeg", desc: "The art of professional baking and decoration." },
+                            { name: "Stitching & Tailoring", img: "https://images.pexels.com/photos/12983499/pexels-photo-12983499.jpeg", desc: "Create your own garments with expert precision." },
+                            { name: "Embroidery Art", img: "https://images.pexels.com/photos/35360708/pexels-photo-35360708.jpeg", desc: "Fine needlework and traditional embroidery styles." },
+                            { name: "Painting", img: "https://images.pexels.com/photos/10566048/pexels-photo-10566048.jpeg", desc: "Oil, acrylic, and watercolor techniques." },
+                            { name: "Knitting", img: "https://images.pexels.com/photos/3942927/pexels-photo-3942927.jpeg", desc: "Creative knitting patterns for all skill levels." },
+                            { name: "Hair Styling", img: "https://images.pexels.com/photos/3065208/pexels-photo-3065208.jpeg", desc: "Professional hair design and care techniques." },
+                            { name: "Hijab Styling", img: "https://images.pexels.com/photos/8487228/pexels-photo-8487228.jpeg", desc: "Elegant and modest hijab draping styles." },
+                            { name: "Skin Care & Remedies", img: "https://images.pexels.com/photos/6933421/pexels-photo-6933421.jpeg", desc: "Natural skincare and holistic home remedies." },
+                            { name: "Resin Art", img: "https://images.pexels.com/photos/7256192/pexels-photo-7256192.jpeg", desc: "Modern resin pouring and preservation art." },
+                            { name: "Fashion Designing", img: "https://images.pexels.com/photos/8527899/pexels-photo-8527899.jpeg", desc: "Conceptualizing and creating unique fashion." },
+                            { name: "Crafting", img: "https://images.pexels.com/photos/4690313/pexels-photo-4690313.jpeg", desc: "Creative DIY projects and handmade crafts." },
+                            { name: "Graphic Designing", img: "https://images.pexels.com/photos/12902944/pexels-photo-12902944.jpeg", desc: "Visual communication using modern digital tools." },
+                            { name: "AI Tools Training", img: "https://images.pexels.com/photos/16037279/pexels-photo-16037279.jpeg", desc: "Leveraging Artificial Intelligence for productivity." },
+                        ];
+                        document.write(skills.map(skill => `
+                        <div class="min-w-[300px] snap-start bg-white dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+                            <div class="h-44 relative overflow-hidden">
+                                <img src="${skill.img}" alt="${skill.name}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute top-4 right-4">
+                                    <span class="bg-secondary text-primary font-bold text-[10px] px-3 py-1 rounded-full uppercase tracking-widest shadow-lg">Paid</span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="font-bold text-lg mb-2">${skill.name}</h4>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">${skill.desc}</p>
+                                <button class="text-primary dark:text-secondary text-xs font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                                    ENROLL NOW <span class="material-icons-round text-sm">east</span>
+                                </button>
+                            </div>
+                        </div>
+                    `).join(''));
+                    </script>
+                </div>
+            </div>
+            <div class="mb-20 group relative">
+                <div class="flex justify-between items-end mb-8">
+                    <div>
+                        <h3 class="text-2xl font-display font-bold text-primary dark:text-white">Academic &amp; Language
+                            Excellence</h3>
+                        <p class="text-sm text-slate-500">Supporting school success and linguistic growth</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button
+                            class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                            onclick="document.getElementById('academic-carousel').scrollBy({left: -400, behavior: 'smooth'})">
+                            <span class="material-icons-round">chevron_left</span>
+                        </button>
+                        <button
+                            class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                            onclick="document.getElementById('academic-carousel').scrollBy({left: 400, behavior: 'smooth'})">
+                            <span class="material-icons-round">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-4" id="academic-carousel">
+                    <script>
+                        const academics = [
+                            { name: "Spoken English", icon: "record_voice_over", range: "All Ages", color: "bg-blue-50 text-blue-600" },
+                            { name: "English Reading", icon: "auto_stories", range: "Kids & Teens", color: "bg-purple-50 text-purple-600" },
+                            { name: "Hindi (R & W)", icon: "edit_note", range: "Beginners to Advanced", color: "bg-orange-50 text-orange-600" },
+                            { name: "Urdu (R & W)", icon: "translate", range: "Beginners to Advanced", color: "bg-emerald-50 text-emerald-600" },
+                            { name: "Science Classes", icon: "science", range: "Nursery to 12th Grade", color: "bg-pink-50 text-pink-600" },
+                            { name: "History Classes", icon: "history_edu", range: "1st to 12th Grade", color: "bg-amber-50 text-amber-600" },
+                            { name: "Maths Classes", icon: "calculate", range: "Nursery to 12th Grade", color: "bg-cyan-50 text-cyan-600" }
+                        ];
+                        document.write(academics.map(item => `
+                        <div class="min-w-[280px] snap-start bg-white dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 p-8 shadow-sm hover:shadow-xl transition-all relative overflow-hidden group">
+                            <div class="absolute top-0 right-0">
+                                <span class="bg-secondary text-primary font-bold text-[9px] px-3 py-1 rounded-bl-xl uppercase">Paid</span>
+                            </div>
+                            <div class="w-16 h-16 ${item.color} rounded-2xl flex items-center justify-center mb-6">
+                                <span class="material-symbols-outlined text-4xl">${item.icon}</span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">${item.name}</h4>
+                            <div class="flex items-center gap-2 mb-6">
+                                <span class="material-icons-round text-secondary text-sm">school</span>
+                                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">${item.range}</span>
+                            </div>
+                            <button class="w-full bg-primary/5 hover:bg-primary hover:text-white text-primary text-xs font-bold py-3 rounded-xl transition-all">BOOK SESSION</button>
+                        </div>
+                    `).join(''));
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white dark:bg-slate-900" id="tutoring">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div
+                    class="inline-flex items-center gap-2 text-secondary font-bold uppercase tracking-widest text-xs mb-4">
+                    <span class="material-icons-round text-sm">school</span>
+                    Academic Excellence
+                </div>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-primary dark:text-white mb-4">1-on-1
+                    Academic Tutoring</h2>
+                <p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Personalized <span
+                        class="text-primary dark:text-secondary font-bold">Personal Paid Classes</span> led by expert
+                    female tutors, dedicated to helping children excel in their school curriculum.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div
+                    class="group bg-white dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 p-8 hover:shadow-2xl transition-all relative overflow-hidden">
+                    <div class="absolute top-0 right-0">
+                        <span
+                            class="bg-secondary text-primary font-bold text-[10px] px-4 py-1.5 rounded-bl-2xl uppercase">Paid</span>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-blue-50 dark:bg-blue-900/20 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-4xl">calculate</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Mathematics</h3>
+                    <p class="text-sm text-slate-500 mb-6">Grade 1 - 10</p>
+                    <button
+                        class="w-full bg-primary hover:bg-emerald-800 text-white font-bold py-3.5 rounded-xl transition-all text-sm flex items-center justify-center gap-2 group-hover:shadow-lg">
+                        Book a Trial
+                        <span class="material-icons-round text-sm">event</span>
+                    </button>
+                </div>
+                <div
+                    class="group bg-white dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 p-8 hover:shadow-2xl transition-all relative overflow-hidden">
+                    <div class="absolute top-0 right-0">
+                        <span
+                            class="bg-secondary text-primary font-bold text-[10px] px-4 py-1.5 rounded-bl-2xl uppercase">Paid</span>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-purple-50 dark:bg-purple-900/20 text-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-4xl">science</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Science</h3>
+                    <p class="text-sm text-slate-500 mb-6">Grade 1 - 10</p>
+                    <button
+                        class="w-full bg-primary hover:bg-emerald-800 text-white font-bold py-3.5 rounded-xl transition-all text-sm flex items-center justify-center gap-2 group-hover:shadow-lg">
+                        Book a Trial
+                        <span class="material-icons-round text-sm">event</span>
+                    </button>
+                </div>
+                <div
+                    class="group bg-white dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 p-8 hover:shadow-2xl transition-all relative overflow-hidden">
+                    <div class="absolute top-0 right-0">
+                        <span
+                            class="bg-secondary text-primary font-bold text-[10px] px-4 py-1.5 rounded-bl-2xl uppercase">Paid</span>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-pink-50 dark:bg-pink-900/20 text-pink-600 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-4xl">auto_stories</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">English</h3>
+                    <p class="text-sm text-slate-500 mb-6">Grade 1 - 12</p>
+                    <button
+                        class="w-full bg-primary hover:bg-emerald-800 text-white font-bold py-3.5 rounded-xl transition-all text-sm flex items-center justify-center gap-2 group-hover:shadow-lg">
+                        Book a Trial
+                        <span class="material-icons-round text-sm">event</span>
+                    </button>
+                </div>
+                <div
+                    class="group bg-white dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 p-8 hover:shadow-2xl transition-all relative overflow-hidden">
+                    <div class="absolute top-0 right-0">
+                        <span
+                            class="bg-secondary text-primary font-bold text-[10px] px-4 py-1.5 rounded-bl-2xl uppercase">Paid</span>
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-4xl">translate</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Arabic / Urdu</h3>
+                    <p class="text-sm text-slate-500 mb-6">All Levels</p>
+                    <button
+                        class="w-full bg-primary hover:bg-emerald-800 text-white font-bold py-3.5 rounded-xl transition-all text-sm flex items-center justify-center gap-2 group-hover:shadow-lg">
+                        Book a Trial
+                        <span class="material-icons-round text-sm">event</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="instructors">
+        <div class="text-center mb-16">
+            <div
+                class="inline-flex items-center gap-2 bg-secondary/10 text-primary dark:text-secondary px-4 py-1.5 rounded-full text-xs font-bold mb-4">
+                <span class="material-icons-round text-sm">workspace_premium</span>
+                Expert Educators
+            </div>
+            <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Our Instructors</h2>
+            <p class="text-slate-500 dark:text-slate-400">Learn from qualified, dedicated female scholars</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+                class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all">
+                <div class="h-64 overflow-hidden relative">
+                    <img alt="Ustadha Fatima Ahmed" class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHZWSVLttgKH4gnVhNgjvKJATAyls0fdq0g7hxGkcsWGM6eBSwhCWV1Eu3oUz78oN0xKPp567B71rWKn6gHiBWcLbnW2iahB8jip2Z0lBxxZ0YGwhRoVXMAHWxUCO8MwND3gtWg2lvrvGI_bEjhLqmfZy0kn_6NVT4RuYn7yTcokRByNT9gZnB6eGio2ldlurbYd4VY320ayu9E8bz2kx-ZYz_bEt1FpTRhmchqKjYI58L0RoE2Y5U-K2IC8-mVUnOlktab06AIq2V" />
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+                        <h4 class="font-bold">Ustadha Fatima Ahmed</h4>
+                        <p class="text-[10px] arabic-text text-secondary">أستاذة فاطمة أحمد</p>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="mb-4">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Qualification</span>
+                        <p class="text-xs font-medium">Ijazah in Quran &amp; Islamic Studies</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-50 dark:border-slate-700">
+                        <span class="text-[10px] font-bold text-emerald-600">15+ Years Exp</span>
+                        <span class="text-[10px] text-slate-400">EN, UR, AR</span>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all">
+                <div class="h-64 overflow-hidden relative">
+                    <img alt="Dr. Maryam Hassan" class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnOCO0pjjpE00CUDeW1C_ASjHwAqpbldPMl6qkdwp867aXcwCDAPwrnT4WEvC9n7DzPWvxWQtjNjMx7puE5KUTvzrK8ePzU2Sfpqqe7SyVnhzmw867bFYgtOvndAnY2Yn-40HcA0SC9wergjWSVk43MSQZfeDY5_FOw6NAKLXk6oQlEAMa6Lp3g8pzlMQZNskF-oYssRn5YPVzdrUlq-4wIxQV-1BojnX7YbAd1QzyLZWtPG4T-1g6Uffrm0xHq2-rvuMNLRa1Ez3s" />
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+                        <h4 class="font-bold">Dr. Maryam Hassan</h4>
+                        <p class="text-[10px] arabic-text text-secondary">د. مريم حسن</p>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="mb-4">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Qualification</span>
+                        <p class="text-xs font-medium">PhD in Islamic Jurisprudence</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-50 dark:border-slate-700">
+                        <span class="text-[10px] font-bold text-emerald-600">12+ Years Exp</span>
+                        <span class="text-[10px] text-slate-400">EN, AR</span>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all">
+                <div class="h-64 overflow-hidden relative">
+                    <img alt="Ustadha Khadija Malik" class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB816ZQhqn3rVh5KQSnlcnpBQBFJzYTN3mv7M7PA0TqtbpyhpO1oIYw4qq8W8YELxjUuMVimwUgDMSoRcT_lJC8xlq56bP3RXX4hYqNE0imKBZC3fpSEALdmnCcPvrx5tPHSqIsRzj-UxnZWnC5OEVyfkkUL0KkiY_Pnhll6bAH5RmmmQILl8ZYFVzbHdRtGkK0qIWR8qW_2CXA_QO7QrTsgGmpD9Y1kTsgfay1pEajmOH0hejgGaZ6I3kmfBeD31uzrvbeUmtK6Oep" />
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+                        <h4 class="font-bold">Ustadha Khadija Malik</h4>
+                        <p class="text-[10px] arabic-text text-secondary">أستاذة خديجة مالك</p>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="mb-4">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Qualification</span>
+                        <p class="text-xs font-medium">MA in Islamic Education</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-50 dark:border-slate-700">
+                        <span class="text-[10px] font-bold text-emerald-600">10+ Years Exp</span>
+                        <span class="text-[10px] text-slate-400">EN, HI, UR</span>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all">
+                <div class="h-64 overflow-hidden relative">
+                    <img alt="Hafiza Aisha Rahman" class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzluakJYe5HkZ_yoZRpccrGY8yMbgMzW6E9SUcvmvAMyUVcuPPI6dEXjeZ-mQdF3N1ttseL82tuUxvG9YlPLg0trM5IqNW6U-xAom6A_594y5AVVaKLjSPTB3aoo_Am75vYnsL1ZtObQaGT6pnpo1DBO2HD1z9dvNI31d2vVmOKrmiQkkjpeqthNdBnP5iGg8DjcBj7jLs2ChZl5MotJoWCRjPKXXSlELtjaUFZMeE4AQKke2quqvtSftACfjODwF5DhiejJEa5A05" />
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+                        <h4 class="font-bold">Hafiza Aisha Rahman</h4>
+                        <p class="text-[10px] arabic-text text-secondary">حافظة عائشة رحمن</p>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="mb-4">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Qualification</span>
+                        <p class="text-xs font-medium">Hafiza &amp; Quran Teacher Cert</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-50 dark:border-slate-700">
+                        <span class="text-[10px] font-bold text-emerald-600">8+ Years Exp</span>
+                        <span class="text-[10px] text-slate-400">EN, UR, HI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="py-16 bg-primary text-white" id="community">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div
+                    class="inline-flex items-center gap-2 bg-white/10 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4">
+                    <span class="material-icons-round text-xs">group</span>
+                    Sisterhood
+                </div>
+                <h2 class="text-4xl font-display font-bold mb-4">Join Our Community</h2>
+                <p class="text-slate-300">Connect with sisters on the same journey through our moderated groups</p>
+            </div>
+            <div class="grid lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-1 bg-black/10 backdrop-blur border border-white/10 p-6 rounded-3xl">
+                    <h4 class="font-bold mb-6 flex items-center gap-2">
+                        <span class="material-icons-round text-secondary">verified_user</span>
+                        Community Guidelines
+                    </h4>
+                    <ul class="space-y-4 text-sm text-slate-300">
+                        <li class="flex gap-3">
+                            <span class="material-icons-round text-xs text-secondary mt-1">check_circle</span>
+                            <span>Women only - verified membership required</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="material-icons-round text-xs text-secondary mt-1">check_circle</span>
+                            <span>Respectful and Islamic etiquette at all times</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3 grid md:grid-cols-2 gap-4">
+                    <div
+                        class="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition-all group">
+                        <h4 class="font-bold mb-2">Al-Arsh-Academy Official</h4>
+                        <p class="text-xs text-slate-400 mb-6">Learn together. Grow together. Walk the path of knowledge
+                            as one Ummah.</p>
+                        <a class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 py-3 rounded-xl font-bold text-xs transition-all"
+                            href="https://whatsapp.com/channel/0029VaktqDUEAKWGvYvrw92H">
+                            Join Group <span class="material-icons-round text-xs">open_in_new</span>
+                        </a>
+                    </div>
+                    <div
+                        class="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition-all group">
+                        <h4 class="font-bold mb-2">Al-Arsh-Academy</h4>
+                        <p class="text-xs text-slate-400 mb-6">Stay connected to daily learning, reminders, and
+                            progress—one message at a time.</p>
+                        <a class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 py-3 rounded-xl font-bold text-xs transition-all"
+                            href="https://chat.whatsapp.com/I3FQU6sxbrM3HMwdN3mU09">
+                            Join Group <span class="material-icons-round text-xs">open_in_new</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white pt-24 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <!-- <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white">
+                            <span class="material-icons-round text-sm">mosque</span>
+                        </div> -->
+                        <span class="text-xl font-bold font-display">Al-Arsh Academy</span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-8">Nurturing faith, knowledge, and sisterhood for the next
+                        generation of Muslim women.</p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Quick Links</h5>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">Home</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#courses">Courses</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#tutoring">Academic Tutoring</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#instructors">Instructors</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#community">Community</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Programs</h5>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">Quran Studies</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#tutoring">Academic Tutoring</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Language Excellence</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Skill Masterclasses</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Contact</h5>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li class="flex items-start gap-3">
+                            <span class="material-icons-round text-sm text-primary">mail</span>
+                            alarshacademyofficial@gmail.com
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-icons-round text-sm text-primary">location_on</span>
+                            Online Learning Platform
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-slate-500 uppercase tracking-widest font-bold">
+                <p>© 2024 Al-Arsh Academy. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
